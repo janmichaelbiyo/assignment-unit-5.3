@@ -26,8 +26,32 @@ console.log(addToCollection(myCollection,'Country Grammer', 'Nelly', 2000));
 console.log(addToCollection(myCollection,'Paper Trail', 'T.I', 2008));
 console.log(addToCollection(myCollection,'Great Depression','DMX', 2001));
 
-
+console.log('This is my collection:')
 console.log (myCollection);
+
+//console.log(myCollection[0].Artist);
+
+
+
+function showCollection (collectionShow) {
+       for (let showColl of collectionShow)
+
+
+       console.log(`${showColl.Title} by ${showColl.Artist}, published in ${showColl.Year}`)  
+
+
+       }
+
+       //console.log(`${showColl.Title} by ${showColl.Artist}, published in ${showColl.Year}`)  
+
+       //return console.log(`${showColl.Title}`)
+//}
+     
+
+//console.log(`${album.title} by ${album.artist}, published in ${album.yearPublished}`)
+
+console.log(showCollection(myCollection));
+
 
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
