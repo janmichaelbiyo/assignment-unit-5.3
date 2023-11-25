@@ -22,6 +22,10 @@ function addToCollection (collection, title, artist, yearPublishd){
 console.log(addToCollection(myCollection, 'Queen II', 'Queen', 1974));
 console.log(addToCollection(myCollection,'Led Zeppelin III','Led Zeppelin', 1970));
 console.log(addToCollection(myCollection,'Hybrid Theory', 'Linkin Park', 2000));
+console.log(addToCollection(myCollection,'Country Grammer', 'Nelly', 2000));
+console.log(addToCollection(myCollection,'Paper Trail', 'T.I', 2008));
+console.log(addToCollection(myCollection,'Great Depression','DMX', 2001));
+
 
 console.log (myCollection);
 
