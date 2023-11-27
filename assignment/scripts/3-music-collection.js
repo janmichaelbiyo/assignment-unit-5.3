@@ -3,19 +3,19 @@ console.log('***** Music Collection *****')
 
 let myCollection = [];
 
-function addToCollection (collection, title, artist, yearPublishd){
+function addToCollection (collection, title, artist, yearPublished){
     //collection = [];
     let albumMusic = 0;
     if ( albumMusic = {
-      Title: title,
-      Artist: artist,
-      Year: yearPublishd,})
+      title,
+      artist,
+      yearPublished,})
       {
     collection.push(albumMusic);
       
     
   }
-    
+ //  console.log(albumMusic); 
   return albumMusic
 }
 
@@ -37,7 +37,7 @@ function showCollection (collectionShow) {
        for (let showColl of collectionShow)
 
 
-       console.log(`${showColl.Title} by ${showColl.Artist}, published in ${showColl.Year}`)  
+       console.log(`${showColl.title} by ${showColl.artist}, published in ${showColl.yearPublished}`)  
 
 
        }
@@ -56,25 +56,28 @@ console.log(showCollection(myCollection));
 
 
 
-function findByArtist (artistName, ourList) {
-        artistName = '';
+function findByArtist(ourList, artist) {
+       //console.log(ourList)
+      // console.log(myCollection);
         let arrArtist = [];
 
         //for (let artistName of ourList){
           for (let x = 0; x<ourList.length; x++){
            // if (ourList.Artist === artistName){
-            if (ourList.Artist = artistName){
-                return true 
+            if (ourList[x].artist === artist ){
+             // console.log(ourList[x])
+                arrArtist.push(ourList[x])
           }
-              
               
             
         }
+        return arrArtist
 }
 
 
 
-console.log(findByArtist('Nelly',myCollection));
+console.log(findByArtist(myCollection, 'Nelly'));
+console.log(findByArtist(myCollection, 'Stevie'));
 
 
 
