@@ -81,6 +81,23 @@ console.log(findByArtist(myCollection, 'Stevie'));
 
 
 
+function search(ourList, artist, year){
+      let collArr = [];
+
+      for (let x = 0; x<ourList.length; x++){
+        if (ourList[x].artist === artist && ourList[x].yearPublished === year ){
+              //console.log(ourList[x]);
+              collArr.push(ourList[x])
+        }
+      }
+      return collArr
+
+}
+
+console.log(search(myCollection, 'DMX', 2001));
+
+console.log(search(myCollection, 'Lil Wayne', 2001));
+
 
 
 
